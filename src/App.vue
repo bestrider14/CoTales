@@ -1,85 +1,45 @@
-<script setup lang="ts">
-  import { RouterLink, RouterView } from 'vue-router';
-  import HelloWorld from './components/HelloWorld.vue';
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <v-app>
+   <Navbar />
+    <v-main>
+      <RouterView />
+    </v-main>
+  </v-app>
 </template>
 
+<script setup lang="ts">
+import { RouterView } from 'vue-router';
+import Navbar from './components/Layout/Navbar.vue';
+const links = [
+  { label: 'Accueil', to: '/' },
+  { label: 'Connexion', to: '/login' },
+  { label: 'Inscription', to: '/register' },
+  { label: 'A propos', to: '/about' },
+];
+</script>
+
+
 <style scoped>
-  header {
-    line-height: 1.5;
-    max-height: 100vh;
-  }
+.app-bar {
+  background: rgba(248, 244, 237, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(20, 33, 61, 0.08);
+}
 
-  .logo {
-    display: block;
-    margin: 0 auto 2rem;
-  }
+.brand-logo {
+  width: 36px;
+  height: 36px;
+}
 
-  nav {
-    width: 100%;
-    font-size: 12px;
-    text-align: center;
-    margin-top: 2rem;
-  }
+.brand-title {
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #14213d;
+}
 
-  nav a.router-link-exact-active {
-    color: var(--color-text);
-  }
-
-  nav a.router-link-exact-active:hover {
-    background-color: transparent;
-  }
-
-  nav a {
-    display: inline-block;
-    padding: 0 1rem;
-    border-left: 1px solid var(--color-border);
-  }
-
-  nav a:first-of-type {
-    border: 0;
-  }
-
-  @media (min-width: 1024px) {
-    header {
-      display: flex;
-      place-items: center;
-      padding-right: calc(var(--section-gap) / 2);
-    }
-
-    .logo {
-      margin: 0 2rem 0 0;
-    }
-
-    header .wrapper {
-      display: flex;
-      place-items: flex-start;
-      flex-wrap: wrap;
-    }
-
-    nav {
-      text-align: left;
-      margin-left: -1rem;
-      font-size: 1rem;
-
-      padding: 1rem 0;
-      margin-top: 1rem;
-    }
-  }
+.brand-subtitle {
+  font-size: 0.8rem;
+  color: rgba(20, 33, 61, 0.68);
+}
 </style>
