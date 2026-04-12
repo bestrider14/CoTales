@@ -1,22 +1,22 @@
 /* Change the app theme here: update these variables to recolor the whole app. */
 :root {
-  --app-primary: #305f72;
-  --app-background: #e1d5c9;
-  --app-surface: #f7efe5;
-  --app-text: #14213d;
-  --app-text-muted: rgba(20, 33, 61, 0.82);
-  --app-text-soft: rgba(20, 33, 61, 0.68);
-  --app-border: rgba(20, 33, 61, 0.08);
-  --app-overlay: rgba(126, 124, 124, 0.9);
+  --app-primary: #314E52;
+  --app-background: #e7e6e1;
+  --app-surface: rgba(170, 27, 27, 0.9);
+  --app-text: var(--app-primary);
+  --app-text-muted: rgba(176, 24, 188, 0.82);
+  --app-text-soft: rgba(41, 228, 20, 0.68);
+  --app-border: rgb(56, 106, 214);
+  --app-overlay: #f2a154;
   --app-white-rgb: 255, 255, 255;
-  --app-panel-bg: rgba(255, 255, 255, 0.72);
-  --app-panel-border: rgba(48, 95, 114, 0.18);
-  --app-panel-shadow: rgba(48, 95, 114, 0.14);
-  --app-badge-bg: #305f72;
-  --app-badge-text: #ffffff;
-  --app-hero-card-bg: #0f172a;
-  --app-hero-card-text: #e2e8f0;
-  --app-hero-card-title: #ffffff;
+  --app-panel-bg: #f7f6e7;
+  --app-panel-border: rgba(113, 202, 237, 0.91);
+  --app-panel-shadow: rgba(227, 16, 130, 0.86);
+  --app-badge-bg: #f2a154;
+  --app-badge-text: #314E52;
+  --app-hero-card-bg: #1356f4;
+  --app-hero-card-text: #25470c;
+  --app-hero-card-title: #d84a4a;
   --home-card-start: #FFDFD8;
   --home-card-end: #dfbab2;
 }

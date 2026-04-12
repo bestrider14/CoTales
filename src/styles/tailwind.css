@@ -2,14 +2,14 @@
 
 @layer components {
   .ui-panel {
-    @apply rounded-2xl border p-4 shadow-sm backdrop-blur;
+    @apply rounded-2xl border p-4 m-5 shadow-sm backdrop-blur;
     background: var(--app-panel-bg);
     border-color: var(--app-panel-border);
     box-shadow: 0 10px 30px -18px var(--app-panel-shadow);
   }
 
   .ui-panel-strong {
-    @apply rounded-[2rem] border p-2 shadow-2xl backdrop-blur-xl;
+    @apply rounded-4xl border p-2 shadow-2xl backdrop-blur-xl;
     background: rgba(var(--app-white-rgb), 0.4);
     border-color: rgba(var(--app-white-rgb), 0.6);
   }

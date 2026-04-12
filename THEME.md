@@ -74,3 +74,75 @@ If you want to recolor the app, start with the `:root` variables in `src/styles/
   --app-hero-card-title: #ffffff;
 }
 ```
+## old main
+```css
+/* Change the app theme here: update these variables to recolor the whole app. */
+:root {
+--app-primary: #314E52;
+--app-background: #e7e6e1;
+--app-surface: rgba(170, 27, 27, 0.9);
+--app-text: var(--app-primary);
+--app-text-muted: rgba(176, 24, 188, 0.82);
+--app-text-soft: rgba(41, 228, 20, 0.68);
+--app-border: rgb(56, 106, 214);
+--app-overlay: #f2a154;
+--app-white-rgb: 255, 255, 255;
+--app-panel-bg: #f7f6e7;
+--app-panel-border: rgba(113, 202, 237, 0.91);
+--app-panel-shadow: rgba(227, 16, 130, 0.86);
+--app-badge-bg: #f2a154;
+--app-badge-text: #314E52;
+--app-hero-card-bg: #1356f4;
+--app-hero-card-text: #25470c;
+--app-hero-card-title: #d84a4a;
+--home-card-start: #FFDFD8;
+--home-card-end: #dfbab2;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+}
+
+html,
+body {
+min-height: 100%;
+}
+
+body {
+min-height: 100vh;
+color: var(--app-text);
+background: var(--app-background);
+line-height: 1.5;
+font-family:
+Inter,
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+Oxygen,
+Ubuntu,
+Cantarell,
+'Helvetica Neue',
+sans-serif;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+min-height: 100vh;
+}
+
+.app-surface {
+background: var(--app-surface);
+}
+
+a {
+text-decoration: none;
+color: inherit;
+transition: color 0.2s ease;
+}
+```
