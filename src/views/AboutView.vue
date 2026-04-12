@@ -1,6 +1,10 @@
+<script setup lang="ts"></script>
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>CoTales</h1>
+    <div>
+      <p>More about us!</p>
+    </div>
   </div>
 </template>
 

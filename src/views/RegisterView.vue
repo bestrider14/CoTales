@@ -82,7 +82,7 @@ const showPassword = ref(false);
   min-height: 100vh;
   background:
     radial-gradient(circle at right top, rgba(255, 214, 165, 0.45), transparent 28%),
-    linear-gradient(140deg, #f9f6f1 0%, #f7efe5 44%, #eef4fb 100%);
+    linear-gradient(140deg, #f9f6f1 0%, var(--app-surface) 44%, #eef4fb 100%);
 }
 
 .info-panel,
@@ -100,20 +100,20 @@ const showPassword = ref(false);
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #9a3412;
+  color: var(--app-primary);
 }
 
 .title {
   font-size: clamp(2.2rem, 5vw, 4.4rem);
   line-height: 0.95;
   font-weight: 800;
-  color: #14213d;
+  color: var(--app-text);
 }
 
 .subtitle {
   margin-top: 20px;
   font-size: 1.05rem;
-  color: rgba(20, 33, 61, 0.82);
+  color: var(--app-text-muted);
 }
 
 .register-card {

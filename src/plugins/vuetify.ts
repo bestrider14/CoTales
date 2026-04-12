@@ -12,8 +12,18 @@ export default createVuetify({
   icons: {
     defaultSet: 'mdi',
     aliases,
-    sets: {
-      mdi,
+    sets: { mdi },
+  },
+  theme: {
+    defaultTheme: 'light',
+    themes: {
+      light: {
+        colors: {
+          primary: 'var(--app-primary)',
+          background: 'var(--app-background)',
+          surface: 'var(--app-surface)',
+        },
+      },
     },
   },
 });

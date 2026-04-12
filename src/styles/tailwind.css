@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer components {
+  .ui-panel {
+    @apply rounded-2xl border p-4 shadow-sm backdrop-blur;
+    background: var(--app-panel-bg);
+    border-color: var(--app-panel-border);
+    box-shadow: 0 10px 30px -18px var(--app-panel-shadow);
+  }
+
+  .ui-panel-strong {
+    @apply rounded-[2rem] border p-2 shadow-2xl backdrop-blur-xl;
+    background: rgba(var(--app-white-rgb), 0.4);
+    border-color: rgba(var(--app-white-rgb), 0.6);
+  }
+
+  .ui-badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase text-white;
+    background: var(--app-badge-bg);
+    color: var(--app-badge-text);
+    letter-spacing: 0.2em;
+  }
+
+  .ui-pill {
+    @apply rounded-full border px-3 py-1 text-sm;
+    color: var(--app-text);
+    border-color: rgba(var(--app-white-rgb), 0.6);
+    background: rgba(var(--app-white-rgb), 0.18);
+  }
+
+  .ui-panel-title {
+    @apply text-xs font-semibold uppercase;
+    color: var(--app-primary);
+    letter-spacing: 0.18em;
+  }
+
+  .ui-panel-text {
+    @apply mt-2 text-sm font-medium;
+    color: var(--app-text);
+  }
+
+  .ui-callout {
+    @apply mt-6 rounded-2xl px-4 py-3 text-sm;
+    background: var(--app-hero-card-bg);
+    color: var(--app-hero-card-text);
+  }
+
+  .ui-callout-title {
+    @apply font-semibold;
+    color: var(--app-hero-card-title);
+  }
+
+  .ui-callout-text {
+    @apply mt-1;
+    color: var(--app-hero-card-text);
+  }
+}
