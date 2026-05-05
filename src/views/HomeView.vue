@@ -1,49 +1,36 @@
+<script setup lang="ts"></script>
 <template>
   <v-container class="py-16">
     <v-row align="center" class="home-hero">
       <v-col cols="12" md="7">
         <p class="home-kicker">CoTales</p>
-        <h1 class="home-title">Une base propre en Vue 3 et Vuetify pour construire ton app.</h1>
+        <h1 class="home-title">Bienvenue sur CoTales!</h1>
         <p class="home-text">
-          Le projet a maintenant un shell Vuetify coherent, une navigation simple et des ecrans
-          de connexion et d'inscription prets a evoluer.
+          Crée des histoires en tout genre et vois jusqu'où elles peuvent te mener.
         </p>
 
         <div class="d-flex flex-wrap ga-3 mt-8">
-          <v-btn color="primary" size="large" to="/login">Aller a la connexion</v-btn>
+          <v-btn color="primary" size="large" variant="flat" to="/login"
+            >Aller a la connexion</v-btn
+          >
           <v-btn variant="outlined" size="large" to="/register">Creer un compte</v-btn>
-        </div>
-
-        <div
-          class="ui-panel flex max-w-2xl flex-wrap items-center gap-3 rounded-3xl "
-        >
-          <span class="ui-badge">Tailwind actif</span>
-          <span class="ui-panel-text mt-0">
-            Ce bloc utilise uniquement des classes Tailwind CSS dans un composant Vuetify.
-          </span>
         </div>
       </v-col>
 
       <v-col cols="12" md="5">
         <v-card rounded="xl" elevation="8" class="pa-6 home-card">
-          <v-card-title class="text-h5 font-weight-bold">Etat du setup</v-card-title>
+          <v-card-title class="text-h5 font-weight-bold">Featured Tale</v-card-title>
           <v-card-text class="pt-4">
             <div class="d-flex flex-column ga-4">
               <div>
-                <div class="status-label">Vuetify</div>
-                <div class="status-value">Initialise proprement</div>
+                <div class="status-label">Le seigneur des balançoires</div>
+                <div class="status-value">Paul fait la loi et l'ordre aux balançoires.</div>
+                <div class="author">Mariecloe28</div>
               </div>
               <div>
-                <div class="status-label">Routing</div>
-                <div class="status-value">Pages Home, Login, Register et About actives</div>
-              </div>
-              <div>
-                <div class="status-label">Build</div>
-                <div class="status-value">Compilation et type-check valides</div>
-              </div>
-              <div>
-                <div class="status-label">Tailwind CSS</div>
-                <div class="status-value">Import Vite OK et utilitaires disponibles dans les vues</div>
+                <div class="status-label">Post #2</div>
+                <div class="status-value">Lorem</div>
+                <div class="author">auteur</div>
               </div>
             </div>
           </v-card-text>
@@ -54,49 +41,64 @@
 </template>
 
 <style scoped>
-.home-hero {
-  min-height: calc(100vh - 120px);
-}
+  .home-hero {
+    min-height: calc(100vh - 120px);
+  }
 
-.home-kicker {
-  margin-bottom: 16px;
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--app-primary);
-}
+  .home-kicker {
+    margin-bottom: 16px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
 
-.home-title {
-  max-width: 12ch;
-  font-size: clamp(2.4rem, 5vw, 4.8rem);
-  line-height: 0.95;
-  font-weight: 800;
-  color: var(--app-text);
-}
+  .home-title {
+    max-width: 12ch;
+    font-size: clamp(2.4rem, 5vw, 4.8rem);
+    line-height: 0.95;
+    font-weight: 800;
+    color: var(--text-soft);
+    letter-spacing: -0.02em;
+  }
 
-.home-text {
-  max-width: 40rem;
-  margin-top: 20px;
-  font-size: 1.05rem;
-  color: var(--app-text-muted);
-}
+  .home-text {
+    max-width: 40rem;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    color: var(--text-muted);
+  }
 
-.home-card {
-  background: linear-gradient(160deg, var(--home-card-start), var(--home-card-end));
-}
+  .home-card {
+    background: linear-gradient(160deg, var(--div-background-color), var(--accent-color-3));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.25s ease;
+  }
+  .home-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
 
-.status-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--app-primary);
-}
+  .status-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
 
-.status-value {
-  margin-top: 4px;
-  font-size: 1rem;
-  color: var(--app-text);
-}
+  .status-value {
+    margin-top: 4px;
+    font-size: 1rem;
+    color: var(--text-soft);
+  }
+
+  .author {
+    margin-top: 6px;
+    font-size: 0.8rem;
+    text-align: right;
+    color: var(--text-muted);
+    font-style: italic;
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-app-bar flat class="app-bar">
-    <v-container class="d-flex align-center justify-space-between py-0">
+    <v-container class="d-flex align-center justify-space-between">
       <div class="d-flex align-center ga-3">
         <img alt="CoTales logo" class="brand-logo" src="../../assets/logo.svg" />
         <div>
@@ -28,9 +28,9 @@ const links = [
 
 <style scoped>
 .app-bar {
-  background: var(--app-overlay);
+  background: var(--accent-color-2);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--app-border);
+  border-bottom: 1px solid var(--accent-color-3);
 }
 
 .brand-logo {
@@ -42,11 +42,11 @@ const links = [
   font-size: 1rem;
   font-weight: 800;
   line-height: 1.1;
-  color: var(--app-text);
+  color: var(--text-soft);
 }
 
 .brand-subtitle {
   font-size: 0.8rem;
-  color: var(--app-text-soft);
+  color: var(--text-soft);
 }
 </style>
