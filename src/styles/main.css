@@ -1,24 +1,12 @@
 /* Change the app theme here: update these variables to recolor the whole app. */
 :root {
-  --app-primary: #314E52;
-  --app-background: #e7e6e1;
-  --app-surface: rgba(170, 27, 27, 0.9);
-  --app-text: var(--app-primary);
-  --app-text-muted: rgba(176, 24, 188, 0.82);
-  --app-text-soft: rgba(41, 228, 20, 0.68);
-  --app-border: rgb(56, 106, 214);
-  --app-overlay: #f2a154;
-  --app-white-rgb: 255, 255, 255;
-  --app-panel-bg: #f7f6e7;
-  --app-panel-border: rgba(113, 202, 237, 0.91);
-  --app-panel-shadow: rgba(227, 16, 130, 0.86);
-  --app-badge-bg: #f2a154;
-  --app-badge-text: #314E52;
-  --app-hero-card-bg: #1356f4;
-  --app-hero-card-text: #25470c;
-  --app-hero-card-title: #d84a4a;
-  --home-card-start: #FFDFD8;
-  --home-card-end: #dfbab2;
+  --main-background-color: #e7e6e1; /*couleur du background de base*/
+  --div-background-color: #f7f6e7; /*couleurs du background des divs d'histoires.*/
+  --accent-color-1: #f2a154;
+  --accent-color-2: #314e52;
+  --accent-color-3: #a9c7b7;
+  --text-soft: #131e20;
+  --text-muted: #131E20D1;
 }
 
 *,
@@ -35,8 +23,8 @@ body {
 
 body {
   min-height: 100vh;
-  color: var(--app-text);
-  background: var(--app-background);
+  color: #252525;
+  background: var(--main-background-color);
   line-height: 1.5;
   font-family:
     Inter,
@@ -56,10 +44,6 @@ body {
 
 #app {
   min-height: 100vh;
-}
-
-.app-surface {
-  background: var(--app-surface);
 }
 
 a {
