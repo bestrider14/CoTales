@@ -5,7 +5,7 @@ import { mdiAccount } from '@mdi/js'
 ## Impawtant
 
 # À faire
-- Demander à Bou où y'a mis le lien du plan en arbre
+
 
 
 
@@ -15,4 +15,3 @@ import { mdiAccount } from '@mdi/js'
 
 
 # Questions!
--pourquoi counter store et non auth store?
