@@ -19,7 +19,8 @@ export default createVuetify({
     themes: {
       light: {
         colors: {
-          primary: 'var(--app-primary)',
+          primary: 'var(--accent-color-2)',
+          secondary: 'var(--accent-color-3)',
           background: 'var(--app-background)',
           surface: 'var(--app-surface)',
         },

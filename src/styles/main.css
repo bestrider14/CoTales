@@ -5,7 +5,7 @@
   --accent-color-1: #f2a154;
   --accent-color-2: #314e52;
   --accent-color-3: #a9c7b7;
-  --text-soft: #131e20;
+  --text-soft: rgb(19, 30, 32);
   --text-muted: #131E20D1;
 }
 
@@ -50,4 +50,13 @@ a {
   text-decoration: none;
   color: inherit;
   transition: color 0.2s ease;
+}
+
+.btn-dark{
+  background-color: var(--accent-color-2);
+  color: var(--accent-color-3);
+}
+.btn-light{
+  background-color: var(--accent-color-3);
+  color: var(--accent-color-2);
 }
